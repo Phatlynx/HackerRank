@@ -17,7 +17,6 @@ std::vector<int> reverseArray(std::vector<int> a)
 int main()
 {
     std::vector<int> array = {2, 9, 11, 20, 25};
-
     array = reverseArray(array);
     for (auto i : array)
         std::cout << i << std::endl;
