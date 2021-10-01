@@ -1,18 +1,26 @@
 #include <bits/stdc++.h>
 #include <vector>
 
+//my solution
 std::vector<int> reverseArray(std::vector<int> a)
 {
-    int aux = 0;
-    int n = a.size();
-    for (int i = 0; i < n / 2; ++i)
-    {
-        aux = a[n - i - 1];
-        a[n - i - 1] = a[i];
-        a[i] = aux;
-    }
+    reverse(a.begin(), a.end());
     return a;
 }
+
+//best solution
+// std::vector<int> reverseArray(std::vector<int> a)
+// {
+//     int aux = 0;
+//     int n = a.size();
+//     for (int i = 0; i < n / 2; ++i)
+//     {
+//         aux = a[n - i - 1];
+//         a[n - i - 1] = a[i];
+//         a[i] = aux;
+//     }
+//     return a;
+// }
 
 int main()
 {
